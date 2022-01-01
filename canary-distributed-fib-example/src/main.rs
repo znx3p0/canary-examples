@@ -54,18 +54,6 @@ async fn main() -> Result<()> {
             println!("calculated `{res}` remotely");
         },
     }
-    // Tcp::bind(ADDRS).await?;
-    // GLOBAL_ROUTE.add_service_at::<DistributedFibCluster>("cluster", Arc::new(RwLock::new(Default::default())))?;
-    // let mut fib = Tcp::connect(ADDRS, "cluster").await?.client::<DistributedFibCluster>();
-
-    // for _ in 0..10 {
-    //     let cluster = Tcp::connect(ADDRS, "cluster").await?.client::<DistributedFibCluster>();
-    //     let cluster = cluster.insert_node().await?;
-    //     <DistributedFibNode as StaticService>::introduce(Arc::new(DistributedFibNode), cluster);
-    // }
-
-    // let res = fib.calculate_fib(5).await?;
-    // println!("{res}");
     Ok(())
 }
 
