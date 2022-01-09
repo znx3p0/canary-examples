@@ -336,8 +336,6 @@ checksum = "52d74260d9bf6944e2208aa46841b4b8f0d7ffc0849a06837b2f510337f86b2b"
 [[package]]
 name = "canary"
 version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5d8a172f80645818df69a90d4b138df82cc144fe55fdc24b9c48d2ca3ed1a4f0"
 dependencies = [
  "async-std",
  "bincode",
@@ -358,8 +356,6 @@ dependencies = [
 [[package]]
 name = "canary-macro"
 version = "0.0.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "14eb73795f90c96f051386c2c2d084d8a56ab4ea8565094ba175eb246e053654"
 dependencies = [
  "proc-macro-crate",
  "quote",
@@ -371,6 +367,7 @@ name = "canary-ping-pong-example"
 version = "0.1.0"
 dependencies = [
  "canary",
+ "rand",
 ]
 
 [[package]]
@@ -734,13 +731,12 @@ checksum = "7f24254aa9a54b5c858eaee2f5bccdb46aaf0e486a595ed5fd8f86ba55232a70"
 [[package]]
 name = "igcp"
 version = "0.0.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0468198f64fc738378108e6960f573d1563380b0037f92544fb1ef217b42a6dc"
 dependencies = [
  "async-std",
  "bincode",
  "bson",
  "derive_more",
+ "futures-lite",
  "postcard",
  "rand",
  "serde",

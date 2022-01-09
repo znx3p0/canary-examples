@@ -1,5 +1,5 @@
 [package]
-name = "canary-ping-pong-example"
+name = "canary-croc-example"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,9 +7,18 @@ edition = "2021"
 
 [dependencies]
 canary = { path = "../../canary/canary" }
-srpc = { path = "../../srpc/srpc" }
 # canary = { version = "0.1" }
+async-std = "1"
 # srpc = "0.1.0"
 serde = "1"
 fastrand = "1"
 structopt = "0.3"
+parity-wordlist = "1"
+
+
+uuid = { version = "0.8", features = [ "serde", "v4", "wasm-bindgen" ] }
+getrandom = { version = "0.2", features = [ "js" ] }
+
+# [profile.release]
+# # opt-level = "z"  # Optimize for size.
+# lto = true

@@ -54,6 +54,10 @@ async fn main() -> Result<()> {
             println!("calculated `{res}` remotely");
         },
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 945f427 (added croc example)
     Ok(())
 }
 
@@ -120,3 +124,4 @@ fn fibonacci(number: u64) -> u64 {
     }
     b
 }
+
