@@ -54,10 +54,6 @@ async fn main() -> Result<()> {
             println!("calculated `{res}` remotely");
         },
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 945f427 (added croc example)
     Ok(())
 }
 
